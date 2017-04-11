@@ -159,6 +159,9 @@ class ActivityComputer {
         // Q1/Q2/Q3 elevation
         let elevationData: IElevationData = this.elevationData(activityStream);
 
+        // Power progression
+        let powerProgression: IPowerProgression = this.powerProgression(powerData, heartRateData);
+        
         // Return an array with all that shit...
 
         let analysisData: IAnalysisData = {
@@ -170,7 +173,8 @@ class ActivityComputer {
             heartRateData: heartRateData,
             cadenceData: cadenceData,
             gradeData: gradeData,
-            elevationData: elevationData
+            elevationData: elevationData,
+            powerProgression: powerProgression
         };
 
         return analysisData;
