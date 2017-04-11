@@ -77,6 +77,10 @@ interface IPowerData {
     powerZones: Array<IZone>;
 }
 
+interface IPowerProgression {
+    powerProgression: number;
+}
+
 interface IHeartRateData {
     TRIMP: number;
     TRIMPPerHour: number;
